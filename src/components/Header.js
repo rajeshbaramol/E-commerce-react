@@ -146,7 +146,7 @@ prevProds = prevProds.filter((x) => x.id === localStorage.getItem('user'))
         </IconButton>
         <p>Messages</p>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={()=>props.history.push('/cart')}>
         <IconButton aria-label='show 11 new notifications' color='inherit'>
           <Badge badgeContent={11} color='secondary'>
             <ShoppingCartIcon />
@@ -203,7 +203,7 @@ prevProds = prevProds.filter((x) => x.id === localStorage.getItem('user'))
                 <MailIcon />
               </Badge>
             </IconButton>
-            <IconButton aria-label={`show ${prevProds[0]?prevProds[0].procucts.length:0} new notifications`} color='inherit'>
+            <IconButton aria-label={`show ${prevProds[0]?prevProds[0].procucts.length:0} new notifications`} color='inherit' onClick={()=>props.history.push('/cart')}>
               <Badge badgeContent={prevProds[0]?prevProds[0].procucts.length:0} color='secondary'>
                 <ShoppingCartIcon />
               </Badge>

@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     maxWidth: 300,
   },
 });
-export const UserCart = () => {
+export const UserCart = (props) => {
   const classes = useStyles();
   let all = JSON.parse(localStorage.getItem('cart')) || [];
   let cartitem = all.filter((x) => x.id === localStorage.getItem('user'))[0];
@@ -48,7 +48,7 @@ export const UserCart = () => {
 
   return (
     <div>
-      <Header></Header>
+      <Header {...props}></Header>
       <List>
         {cartitems.procucts.length>0?cartitems.procucts.map((x) => (
           <ListItem>
