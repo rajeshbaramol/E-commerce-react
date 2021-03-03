@@ -188,7 +188,7 @@ prevProds = prevProds.filter((x) => x.id === localStorage.getItem('user'))
               <SearchIcon />
             </div>
             <InputBase
-              placeholder='Search…'
+              placeholder='in Progress...'
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

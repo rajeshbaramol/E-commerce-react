@@ -45,7 +45,7 @@ export const Categories = (props) => {
   }, [props]);
   return (
     <Box className={classes.root}>
-      <Tabs value={props.data.category||0} onChange={handleChange}>
+      <Tabs value={props.data.category||0}  onChange={handleChange}>
         <Tab label={'Categories'}>
           <Typography>Categories</Typography>
         </Tab>
